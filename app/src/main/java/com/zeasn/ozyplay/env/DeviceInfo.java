@@ -15,7 +15,7 @@ import java.util.Locale;
  * 构造时从 {@link Build}、{@link DisplayMetrics} 和 {@link Locale} 一次性读取所有字段，
  * 所有字段为 final，保证线程安全。
  */
-public class DeviceInfo {
+class DeviceInfo {
 
     private final String brand;
     private final String product;

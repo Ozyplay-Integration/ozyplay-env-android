@@ -12,7 +12,7 @@ import org.json.JSONObject;
 /**
  * 宿主应用信息数据类 — 封装包名、版本号、UserAgent 等应用属性。
  */
-public class AppInfo {
+class AppInfo {
 
     private final String packageName;
     private final long versionCode;

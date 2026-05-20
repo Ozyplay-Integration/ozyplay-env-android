@@ -16,7 +16,7 @@ import java.io.FileReader;
 /**
  * 硬件信息数据类 — 封装内存、CPU 架构、屏幕尺寸等硬件属性。
  */
-public class HardwareInfo {
+class HardwareInfo {
 
     private final long memAvailable;
     private final long memTotal;

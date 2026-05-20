@@ -9,7 +9,7 @@ import org.json.JSONObject;
 /**
  * 存储信息工具类 — 提供 ROM 和内置存储容量查询
  */
-public class StorageUtil {
+class StorageUtil {
 
     public static long getRomTotalSize() {
         return new StatFs(Environment.getDataDirectory().getPath()).getTotalBytes();

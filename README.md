@@ -43,7 +43,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation 'com.github.Ozyplay-Support:ozyplay-env-android:1.0.0'
+    implementation 'com.github.Ozyplay-Support:ozyplay-env-android:1.0.1'
 }
 ```
 
@@ -73,12 +73,7 @@ bridge.release();
 
 ## Using DeviceInfoManager Standalone
 
-If you only need device info collection without the JS Bridge:
-
-```java
-DeviceInfoManager.getInstance().init(context);
-String allInfo = DeviceInfoManager.getInstance().getAllInfoJson();
-```
+`DeviceInfoManager` is internal to the SDK. All device information is accessed through the JS Bridge (`window.OzyplayEnv.getDeviceInfo()`) or by calling `OzyplayEnv.inject(webView)` on the native side.
 
 ---
 

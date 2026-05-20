@@ -13,7 +13,7 @@ import java.io.IOException;
  * Google Advertising ID 获取工具类。
  * 封装 AdvertisingIdClient 调用，返回 JSON 字符串结果。
  */
-public class AdIdHelper {
+class AdIdHelper {
 
     private static final String TAG = "AdIdHelper";
 

@@ -7,8 +7,9 @@ import org.json.JSONObject;
 
 /**
  * 设备信息门面类 — 单例模式，提供统一的设备信息采集入口。
+ * 仅供 SDK 内部使用。
  */
-public class DeviceInfoManager {
+class DeviceInfoManager {
 
     private static volatile DeviceInfoManager sInstance;
     private Context mContext;
@@ -16,7 +17,7 @@ public class DeviceInfoManager {
 
     private DeviceInfoManager() {}
 
-    public static DeviceInfoManager getInstance() {
+    static DeviceInfoManager getInstance() {
         if (sInstance == null) {
             synchronized (DeviceInfoManager.class) {
                 if (sInstance == null) {
@@ -30,26 +31,26 @@ public class DeviceInfoManager {
     /**
      * 初始化，应在 Application.onCreate() 中调用。
      */
-    public void init(Context context) {
+    void init(Context context) {
         mContext = context.getApplicationContext();
     }
 
-    public DeviceInfo getDeviceInfo() {
+    DeviceInfo getDeviceInfo() {
         checkInitialized();
         return new DeviceInfo(mContext);
     }
 
-    public HardwareInfo getHardwareInfo() {
+    HardwareInfo getHardwareInfo() {
         checkInitialized();
         return new HardwareInfo(mContext);
     }
 
-    public AppInfo getAppInfo() {
+    AppInfo getAppInfo() {
         checkInitialized();
         return new AppInfo(mContext);
     }
 
-    public JSONObject getStorageInfo() {
+    JSONObject getStorageInfo() {
         checkInitialized();
         return StorageUtil.toJson();
     }
@@ -58,15 +59,17 @@ public class DeviceInfoManager {
      * 设置宿主 WebView 实际使用的 User-Agent。
      * 由 OzyplayEnv 在 getDeviceInfo() 调用时自动注入。
      */
-    public void setUserAgent(String userAgent) {
+    void setUserAgent(String userAgent) {
         mUserAgent = userAgent;
     }
 
     /**
      * 获取所有设备信息的聚合 JSON 字符串。
      * 输出格式：{"deviceInfo":{...}, "hardwareInfo":{...}, "storageInfo":{...}, "appInfo":{...}}
+     * <p>
+     * 仅供 SDK 内部使用，外部请通过 OzyplayEnv JS Bridge 获取。
      */
-    public String getAllInfoJson() {
+    String getAllInfoJson() {
         checkInitialized();
         try {
             JSONObject result = new JSONObject();
