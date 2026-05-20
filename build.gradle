@@ -65,14 +65,14 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
 
-                groupId = 'com.github.Ozyplay-Support'
+                groupId = 'com.github.Ozyplay-Integration'
                 artifactId = 'ozyplay-env-android'
                 version = '1.0.1'
 
                 pom {
                     name = 'OzyplayEnv Android SDK'
-                    description = 'Android SDK providing JS Bridge for WebView apps â€” device info, lifecycle events, screen state, Google Ad ID, and geo info.'
-                    url = 'https://github.com/Ozyplay-Support/ozyplay-env-android'
+                    description = 'Android SDK providing JS Bridge for WebView apps â€?device info, lifecycle events, screen state, Google Ad ID, and geo info.'
+                    url = 'https://github.com/Ozyplay-Integration/ozyplay-env-android'
 
                     licenses {
                         license {
@@ -83,14 +83,14 @@ afterEvaluate {
 
                     developers {
                         developer {
-                            id = 'Ozyplay-Support'
-                            name = 'Ozyplay-Support'
+                            id = 'Ozyplay-Integration'
+                            name = 'Ozyplay-Integration'
                         }
                     }
 
                     scm {
-                        connection = 'scm:git:github.com/Ozyplay-Support/ozyplay-env-android.git'
-                        url = 'https://github.com/Ozyplay-Support/ozyplay-env-android'
+                        connection = 'scm:git:github.com/Ozyplay-Integration/ozyplay-env-android.git'
+                        url = 'https://github.com/Ozyplay-Integration/ozyplay-env-android'
                     }
                 }
             }
