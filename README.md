@@ -2,8 +2,6 @@
 
 [![](https://jitpack.io/v/Ozyplay-Support/ozyplay-env-android.svg)](https://jitpack.io/#Ozyplay-Support/ozyplay-env-android)
 
-[中文文档](README_CN.md)
-
 Android SDK providing JS Bridge for WebView apps — device info, lifecycle events, screen state, and Google Ad ID.
 
 ## Features
