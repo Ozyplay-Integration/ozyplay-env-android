@@ -2,17 +2,17 @@
 
 [![](https://jitpack.io/v/Ozyplay-Integration/ozyplay-env-android.svg)](https://jitpack.io/#Ozyplay-Integration/ozyplay-env-android)
 
-Android SDK providing JS Bridge for WebView apps â€?device info, lifecycle events, screen state, and Google Ad ID.
+Android SDK providing JS Bridge for WebView apps ï¿½?device info, lifecycle events, screen state, and Google Ad ID.
 
 ## Features
 
-- **Device Info** â€?Brand, model, manufacturer, Android version, screen resolution, DPI, locale
-- **Hardware Info** â€?Memory, CPU architecture, Android ID, screen diagonal size (inches)
-- **Storage Info** â€?ROM and internal shared storage capacity
-- **App Info** â€?Package name, version code, UserAgent
-- **Lifecycle Events** â€?SDK auto-detects Activity lifecycle and screen on/off, pushes events to H5
-- **Screen State** â€?H5 can query current screen state synchronously
-- **Google Ad ID** â€?Async fetch of Google Advertising ID
+- **Device Info** ï¿½?Brand, model, manufacturer, Android version, screen resolution, DPI, locale
+- **Hardware Info** ï¿½?Memory, CPU architecture, Android ID, screen diagonal size (inches)
+- **Storage Info** ï¿½?ROM and internal shared storage capacity
+- **App Info** ï¿½?Package name, version code, UserAgent
+- **Lifecycle Events** ï¿½?SDK auto-detects Activity lifecycle and screen on/off, pushes events to H5
+- **Screen State** ï¿½?H5 can query current screen state synchronously
+- **Google Ad ID** ï¿½?Async fetch of Google Advertising ID
 
 ## Integration
 
@@ -41,7 +41,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation 'com.github.Ozyplay-Integration:ozyplay-env-android:1.0.1'
+    implementation 'com.github.Ozyplay-Integration:ozyplay-env-android:1.0.2'
 }
 ```
 
