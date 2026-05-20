@@ -1,6 +1,6 @@
 # OzyplayEnv Android SDK
 
-[![](https://jitpack.io/v/AgnitumuS/ozyplay-env-android.svg)](https://jitpack.io/#AgnitumuS/ozyplay-env-android)
+[![](https://jitpack.io/v/Ozyplay-Support/ozyplay-env-android.svg)](https://jitpack.io/#Ozyplay-Support/ozyplay-env-android)
 
 [English](README.md)
 
@@ -43,7 +43,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation 'com.github.AgnitumuS:ozyplay-env-android:1.0.0'
+    implementation 'com.github.Ozyplay-Support:ozyplay-env-android:1.0.0'
 }
 ```
 
