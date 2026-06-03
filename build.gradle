@@ -71,7 +71,7 @@ afterEvaluate {
 
                 pom {
                     name = 'OzyplayEnv Android SDK'
-                    description = 'Android SDK providing JS Bridge for WebView apps �?device info, lifecycle events, screen state, Google Ad ID, and geo info.'
+                    description = 'Android SDK providing JS Bridge for WebView apps - device info, lifecycle events, screen state, and Google Ad ID.'
                     url = 'https://github.com/Ozyplay-Integration/ozyplay-env-android'
 
                     licenses {

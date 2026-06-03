@@ -2,17 +2,17 @@
 
 [![](https://jitpack.io/v/Ozyplay-Integration/ozyplay-env-android.svg)](https://jitpack.io/#Ozyplay-Integration/ozyplay-env-android)
 
-Android SDK providing JS Bridge for WebView apps �?device info, lifecycle events, screen state, and Google Ad ID.
+Android SDK providing JS Bridge for WebView apps - device info, lifecycle events, screen state, and Google Ad ID.
 
 ## Features
 
-- **Device Info** �?Brand, model, manufacturer, Android version, screen resolution, DPI, locale
-- **Hardware Info** �?Memory, CPU architecture, Android ID, screen diagonal size (inches)
-- **Storage Info** �?ROM and internal shared storage capacity
-- **App Info** �?Package name, version code, UserAgent
-- **Lifecycle Events** �?SDK auto-detects Activity lifecycle and screen on/off, pushes events to H5
-- **Screen State** �?H5 can query current screen state synchronously
-- **Google Ad ID** �?Async fetch of Google Advertising ID
+- **Device Info** - Brand, model, manufacturer, Android version, screen resolution, DPI, locale
+- **Hardware Info** - Memory, CPU architecture, Android ID, screen diagonal size (inches)
+- **Storage Info** - ROM and internal shared storage capacity
+- **App Info** - Package name, version code, UserAgent
+- **Lifecycle Events** - SDK auto-detects Activity lifecycle and screen on/off, pushes events to H5
+- **Screen State** - H5 can query current screen state synchronously
+- **Google Ad ID** - Async fetch of Google Advertising ID
 
 ## Integration
 
